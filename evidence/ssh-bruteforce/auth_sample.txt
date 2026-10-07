@@ -1,0 +1,15 @@
+2026-10-07T16:28:31.251415+02:00 lab-target-ubuntu sshd[19448]: Received disconnect from 192.168.100.20 port 53268:11: Bye Bye [preauth]
+2026-10-07T16:28:31.252060+02:00 lab-target-ubuntu sshd[19448]: Disconnected from authenticating user target 192.168.100.20 port 53268 [preauth]
+2026-10-07T16:28:31.605062+02:00 lab-target-ubuntu sshd[19453]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=target
+2026-10-07T16:28:31.608312+02:00 lab-target-ubuntu sshd[19450]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=target
+2026-10-07T16:28:31.633955+02:00 lab-target-ubuntu sshd[19452]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=target
+2026-10-07T16:28:31.634850+02:00 lab-target-ubuntu sshd[19451]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=target
+2026-10-07T16:28:33.935506+02:00 lab-target-ubuntu sshd[19453]: Failed password for target from 192.168.100.20 port 53312 ssh2
+2026-10-07T16:28:33.941037+02:00 lab-target-ubuntu sshd[19450]: Failed password for target from 192.168.100.20 port 53284 ssh2
+2026-10-07T16:28:33.967222+02:00 lab-target-ubuntu sshd[19451]: Failed password for target from 192.168.100.20 port 53296 ssh2
+2026-10-07T16:28:33.967965+02:00 lab-target-ubuntu sshd[19452]: Failed password for target from 192.168.100.20 port 53304 ssh2
+2026-10-07T16:28:37.608017+02:00 lab-target-ubuntu sshd[19453]: Failed password for target from 192.168.100.20 port 53312 ssh2
+2026-10-07T16:28:37.617085+02:00 lab-target-ubuntu sshd[19450]: Failed password for target from 192.168.100.20 port 53284 ssh2
+2026-10-07T16:28:37.646098+02:00 lab-target-ubuntu sshd[19452]: Failed password for target from 192.168.100.20 port 53304 ssh2
+2026-10-07T16:28:37.646511+02:00 lab-target-ubuntu sshd[19451]: Failed password for target from 192.168.100.20 port 53296 ssh2
+2026-10-07T16:28:40.281996+02:00 lab-target-ubuntu sshd[19453]: Failed password for target from 192.168.100.20 port 53312 ssh2
