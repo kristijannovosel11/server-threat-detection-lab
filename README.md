@@ -1,4 +1,5 @@
 # server-threat-detection-lab
+
 Virtual lab for evaluating network IDS, system logs and correlated threat detection.
 
 This repository documents a virtual cybersecurity lab built for evaluating different approaches to detecting security threats in server network traffic.
@@ -15,24 +16,25 @@ The goal of this project is to compare three detection approaches:
 
 The lab is built using virtual machines in an isolated network environment.
 
-Planned components:
+Current components:
 
 - Ubuntu Server as the target server
 - Kali Linux as the attacker machine
 - Ubuntu client as the legitimate user
 - Suricata as the network IDS
-- SSH service for authentication-based scenarios
-- Apache or Nginx web server for HTTP-based scenarios
-- Python scripts for log parsing, event correlation and metric calculation
+- OpenSSH for authentication-based scenarios
+- Apache HTTP Server for web-based scenarios
+- tcpdump for packet capture
+- Python scripts planned for log parsing, event correlation and metric calculation
 
 ## Detection Scenarios
 
-Planned scenarios:
+Current scenario status:
 
-- SSH brute-force attempts
-- Port scanning
-- HTTP request abuse
-- Access to suspicious or non-existent endpoints
+- SSH brute-force attempts - completed
+- Port scanning - planned
+- HTTP request abuse - planned
+- Access to suspicious or non-existent endpoints - planned
 
 ## Data Sources
 
@@ -40,8 +42,9 @@ The analysis is based on:
 
 - Suricata EVE JSON logs
 - System authentication logs
-- Web server access logs
-- Processed CSV/JSON datasets
+- Apache access logs
+- PCAP captures
+- Processed CSV/JSON datasets planned for later analysis
 
 ## Evaluation Metrics
 
@@ -52,12 +55,6 @@ The project will use quantitative metrics such as:
 - Precision
 - False Negatives
 - Detection coverage by data source
-
-## Repository Status
-
-This project is currently in progress as part of a master's thesis laboratory implementation.
-
-Initial README for threat detection lab
 
 ## Completed Lab Scenario
 
@@ -79,3 +76,9 @@ Suricata recorded the SSH traffic, but no matching alert was generated with the 
 Full documentation and evidence:
 
 [SSH Brute-Force Scenario](docs/ssh-bruteforce.md)
+
+## Repository Status
+
+This project is currently in progress as part of a master's thesis laboratory implementation.
+
+The SSH brute-force scenario has been completed and documented. Additional scenarios and correlation analysis will be added as the laboratory work continues.
