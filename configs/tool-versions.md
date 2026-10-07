@@ -24,7 +24,7 @@ cat /etc/os-release
 
 | Tool / Service | Lab Role | Verification Command |
 |---|---|---|
-| Suricata | Network IDS / NIDS sensor | `suricata --version` |
+| Suricata | Network IDS / NIDS sensor | 7.0.3 |
 | OpenSSH Server | SSH target service and authentication log source | `ssh -V` or `sshd -V` |
 | Apache HTTP Server | Web service and HTTP access log source | `apache2 -v` |
 | nmap | Controlled port scanning scenario | `nmap --version` |

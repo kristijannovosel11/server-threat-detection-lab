@@ -1,5 +1,7 @@
 # Methodology
 
+This document describes the planned evaluation methodology. Automated correlation and metric calculation have not been implemented yet.
+
 This document describes the methodology used to evaluate security threat detection in a controlled virtual laboratory environment.
 
 ## Evaluation Goal

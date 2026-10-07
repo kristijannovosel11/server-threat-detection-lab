@@ -51,6 +51,19 @@ A small sample is stored in:
 
 `evidence/ssh-bruteforce/auth_sample.txt`
 
+## Suricata Configuration
+
+The target server used Suricata version `7.0.3`.
+
+The active rule configuration used:
+
+- rule file: `/var/lib/suricata/rules/suricata.rules`
+- loaded rules: `49,582`
+- failed rules: `0`
+
+The Suricata startup log confirmed that one rule file was processed successfully.
+`suricata-update list-enabled-sources` returned no separately enabled rule sources, so I do not assume a specific external ruleset provider.
+
 ## Suricata Observation
 
 Suricata recorded SSH traffic from `192.168.100.20` to `192.168.100.10` on TCP port 22.
@@ -64,6 +77,16 @@ The EVE JSON output contains SSH events with:
 
 For the final run, I checked new EVE JSON entries generated after the recorded pre-test position and filtered alert events containing the attacker IP address.
 
+The alert count was calculated using the following command:
+
+```bash
+sudo tail -n +15600 /var/log/suricata/eve.json \
+  | grep '"event_type":"alert"' \
+  | grep '192.168.100.20' \
+  | wc -l
+```
+
+Line `15599` was recorded as the last EVE JSON line before the final test, so the analysis started from line `15600`.
 The number of matching Suricata alerts was:
 
 ```text
